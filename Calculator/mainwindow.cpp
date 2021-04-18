@@ -8,6 +8,7 @@ MainWindow::~MainWindow()
 
 MainWindow::MainWindow(QWidget *parent): QWidget(parent)
 {
+
     vLayout = new QVBoxLayout();
 
     vLayout1 = new QVBoxLayout();
@@ -110,7 +111,6 @@ void MainWindow::operatorClicked(){
         res = lineEdit1->text().toDouble(); //the previous clicked number
         lineEdit1->setText("");
         firstOperator = false;
-        qDebug() << "itt";
     }
 
 }
